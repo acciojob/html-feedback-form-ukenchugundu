@@ -4,10 +4,35 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<title>HTML Feedback Form Creation</title>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<h1>Feedback Form</h1>
+	<form method="post" action="/">
+		<div>
+		<label for="name">Name : </label>
+		<input type="text" id="name" name="name" max="3" min="50" required>
+	   </div>
+		<br>
+		<div>
+			<label for="portfolio" > Portfolio</label>
+			<input type="url" id="portfolio" name="portfolio" required>
+		</div>
+		<br>
+		<div>
+			<label for="color">Favorite Color</label>
+			<input type="color" id="color" name="color">
+		</div>
+		<br>
+		<div>
+			<label for="range">
+				Likeness : 
+			</label>
+			<input type="range" id="range" name="range" min="1" max="100"> 
+		</div>
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
